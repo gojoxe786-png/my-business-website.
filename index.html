@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Nova Business | Official Website</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1120;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111a2e;
+      border-bottom: 1px solid #26344d;
+    }
+
+    .logo {
+      color: #38bdf8;
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 14px;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 85px 7% 75px;
+      text-align: center;
+      background: linear-gradient(145deg, #111a2e, #0b1120);
+    }
+
+    .tag {
+      color: #38bdf8;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(36px, 8vw, 58px);
+      line-height: 1.15;
+      margin: 20px 0;
+    }
+
+    h1 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      color: #b7c3d7;
+      max-width: 540px;
+      margin: 0 auto 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      background: #38bdf8;
+      color: #07111f;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      border: 1px solid #52627b;
+      color: white;
+    }
+
+    section {
+      padding: 60px 7%;
+      scroll-margin-top: 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #a9b6ca;
+      margin-bottom: 32px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #121d32;
+      border: 1px solid #293750;
+      border-radius: 13px;
+      padding: 24px;
+    }
+
+    .card h3 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #b7c3d7;
+      font-size: 14px;
+    }
+
+    .price {
+      font-size: 26px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .about {
+      background: #101a2c;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 650px;
+      margin: auto;
+      color: #b7c3d7;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #9aa9bf;
+      background: #070c16;
+      font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        padding: 18px 5%;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 12px;
+      }
+
+      .hero {
+        padding: 65px 6%;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 48px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">NOVA.</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="tag">YOUR BUSINESS. YOUR FUTURE.</div>
+      <h1>Ideas into <span>reality.</span></h1>
+      <p>
+        Welcome to Nova Business. We provide reliable,
+        professional services to help you reach your goals.
+      </p>
+      <a href="#services" class="btn">Explore Services</a>
+      <a href="#contact" class="btn secondary">Contact Us</a>
+    </section>
+
+    <section id="services">
+      <h2 class="section-title">Our Services</h2>
+      <p class="subtitle">Simple solutions. Professional results.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Web Design</h3>
+          <p>Modern, mobile-friendly websites for your business.</p>
+        </div>
+
+        <div class="card">
+          <h3>Brand Identity</h3>
+          <p>Build a recognizable and professional business brand.</p>
+        </div>
+
+        <div class="card">
+          <h3>Digital Support</h3>
+          <p>Practical digital solutions for your business needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="section-title">About Nova</h2>
+      <p>
+        We believe every business deserves a strong online
+        presence. Our goal is to deliver clear communication,
+        thoughtful design, and dependable service.
+      </p>
+    </section>
+
+    <section id="pricing">
+      <h2 class="section-title">Our Packages</h2>
+      <p class="subtitle">Example prices — customize these for your business.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Starter</h3>
+          <div class="price">Rs. 2,000</div>
+          <p>A basic package for getting started.</p>
+        </div>
+
+        <div class="card">
+          <h3>Professional</h3>
+          <div class="price">Rs. 5,000</div>
+          <p>More features for a growing business.</p>
+        </div>
+
+        <div class="card">
+          <h3>Premium</h3>
+          <div class="price">Rs. 10,000</div>
+          <p>A tailored package for your requirements.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-title">Let's Talk</h2>
+      <p class="subtitle">
+        Have a project in mind? Contact us on WhatsApp.
+      </p>
+
+      <!-- Replace 923001234567 with your WhatsApp number -->
+      <a class="btn"
+         href="https://wa.me/923001234567"
+         target="_blank"
+         rel="noopener">
+        Chat on WhatsApp
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Nova Business. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
